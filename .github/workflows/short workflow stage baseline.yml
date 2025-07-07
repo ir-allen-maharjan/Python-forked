@@ -79,7 +79,7 @@ jobs:
       #   run: curl -s -L "https://tinyurl.com/invisirisk"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt --legacy-peer-deps
+        run: pip install -r requirements.txt --no-deps
 
       - name: Cleanup PSE
         if: always()
