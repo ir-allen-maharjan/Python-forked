@@ -1,1 +1,5 @@
 rsa==3.3 # removed because its CVE does not have CWE
+alita-tools
+chellow
+hyperbrowser
+pypi-demo-mcp
