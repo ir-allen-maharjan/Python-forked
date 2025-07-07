@@ -80,11 +80,3 @@ secretstorage==3.3.3
 pynacl==1.5.0
 paramiko==3.5.0
 pysftp==0.2.9
-websockets==13.0.1
-socketio==5.3.6
-pyzmq==26.2.0
-msgpack==1.1.0
-zeroconf==0.135.0
-pybluez==0.23
-pyusb==1.2.1
-pyserial==3.5
