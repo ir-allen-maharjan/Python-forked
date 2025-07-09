@@ -79,8 +79,8 @@ jobs:
       #   run: curl -s -L "https://tinyurl.com/invisirisk"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt --no-deps
-
+        run: pip install -r requirements.txt
+        
       - name: Cleanup PSE
         if: always()
         uses: invisirisk/pse-action@latest
