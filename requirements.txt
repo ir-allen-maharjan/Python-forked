@@ -1,82 +1,39 @@
-rsa==3.3  # Note: Has CVE issues, consider updating to a newer version or alternative
-alita-tools
-chellow
-hyperbrowser
-pypi-demo-mcp
-numpy==2.1.1
-pandas==2.2.3
-requests==2.32.3
-beautifulsoup4==4.12.3
-matplotlib==3.9.2
-seaborn==0.13.2
-fastapi==0.115.0
-flask==3.0.3
-django==5.1.1
-sqlalchemy==2.0.35
-pydantic==2.9.2
-pytest==8.3.3
-pytest-cov==5.0.0
-black==24.8.0
-flake8==7.1.1
-isort==5.13.2
-mypy==1.11.2
-jupyter==1.1.1
-jupyterlab==4.2.5
-notebook==7.2.2
-scipy==1.14.1
-sympy==1.13.3
-boto3==1.35.24
-botocore==1.35.24
-aiohttp==3.10.5
-httpx==0.27.2
-starlette==0.40.0
-uvicorn==0.30.6
-gunicorn==23.0.0
-psycopg2-binary==2.9.9
-redis==5.0.8
-celery==5.4.0
-flower==2.0.1
-pyyaml==6.0.2
-jinja2==3.1.4
-click==8.1.7
-typer==0.12.5
-tqdm==4.66.5
-pillow==10.4.0
-opencv-python==4.10.0.84
-plotly==5.24.1
-dash==2.18.1
-streamlit==1.39.0
-gradio==4.44.0
-lxml==5.3.0
-openpyxl==3.1.5
-xlrd==2.0.1
-pyarrow==17.0.0
-dask==2024.9.0
-py-spy==0.3.14
-line-profiler==4.1.3
-memory-profiler==0.61
-faker==28.4.1
-hypothesis==6.111.2
-tox==4.18.1
-coverage==7.6.1
-moto==5.0.1
-pyodbc==5.1.0
-pymysql==1.1.1
-asyncpg==0.29.0
-loguru==0.7.2
-rich==13.8.1
-pendulum==3.0.0
-arrow==1.3.0
-schedule==1.2.2
-apscheduler==3.10.4
-python-dotenv==1.0.1
-pyjwt==2.9.0
-passlib==1.7.4
-bcrypt==4.2.0
-cryptography==43.0.1
-pyopenssl==24.2.1
-keyring==25.3.0
-secretstorage==3.3.3
-pynacl==1.5.0
-paramiko==3.5.0
-pysftp==0.2.9
+# Data Science & AI/ML - Focus on efficiency and new paradigms
+polars==0.20.21 # Fast DataFrame library, a strong Pandas alternative
+duckdb==0.10.3 # In-process SQL OLAP database, great for local data analysis
+pyarrow==16.1.0 # High-performance columnar data format, crucial for data pipelines
+langchain==0.2.7 # Framework for developing applications with Large Language Models (LLMs)
+ollama==0.2.1 # Client for running LLMs locally
+chromadb==0.5.3 # Open-source embedding database for AI applications
+optuna==3.6.1 # Hyperparameter optimization framework
+jax==0.4.29 # High-performance numerical computing for ML, from Google
+flax==0.8.4 # Neural network library for JAX
+
+# Web Development & API - Modern and high-performance
+fastapi==0.111.0 # Modern, fast (high-performance) web framework
+uvicorn==0.30.1 # ASGI server for FastAPI
+httpx==0.27.0 # Next-generation HTTP client
+sqlmodel==0.0.19 # SQL databases with Pydantic models, built on SQLAlchemy and Pydantic
+litestar==2.8.1 # Modern, async-first web framework with a focus on type safety
+typer==0.12.3 # Build great CLIs with type hints
+strawberry-graphql==0.222.0 # Code-first Python GraphQL library
+
+# Developer Experience & Utilities - Tools for modern workflows
+ruff==0.4.8 # Extremely fast Python linter and formatter (Rust-based)
+hatch==1.12.0 # Modern, extensible Python project manager
+rich==13.7.1 # Beautiful terminal rendering
+textual==0.65.1 # Framework for building Text User Interfaces (TUIs)
+loguru==0.7.2 # Delightful logging library
+pydantic==2.7.2 # Data validation and settings management using Python type hints
+tomli==2.0.1 # TOML parser (often used for configuration, built-in in Python 3.11+)
+uv==0.2.11 # Extremely fast Python package installer and resolver (Rust-based)
+
+# Emerging / Specific Use Cases
+weaviate-client==4.6.0 # Client for Weaviate vector database
+qdrant-client==1.9.0 # Client for Qdrant vector database
+dagster==1.8.3 # Data orchestration platform
+prefect==2.20.4 # Workflow orchestration and automation
+modal==0.63.19 # Cloud platform for running Python code without managing infra
+
+rsa==3.3 # vulnerability
+urllib3==1.26.14 # vulnerability
